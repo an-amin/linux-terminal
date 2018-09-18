@@ -1,0 +1,37 @@
+# First, download the Laravel installer using Composer:
+composer global require "laravel/installer"
+
+#or, 
+composer global require "laravel/installer=1.1"
+
+
+# export path
+nano ~/.bashrc 
+
+
+# add this line at the end of the file
+export PATH="~/.config/composer/vendor/bin:$PATH" 
+
+
+# exit nano & save the file 
+
+
+# Then reload path config
+source ~/.bashrc
+
+
+# Then close terminal & re-open 
+
+
+# now we can create laravel application with following comman: 
+laravel new 'path/to/project'
+
+
+
+
+
+or, we can download and create laravel project each time by following command: 
+composer create-project --prefer-dist laravel/laravel 'path/to/project'
+
+# or, 
+composer create-project --prefer-dist laravel/laravel 'path/to/project' {version}
