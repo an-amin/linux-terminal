@@ -1,0 +1,48 @@
+﻿# first we'll make the server user owner of the laravel source directory
+# let, '/var/www/laravel-blog' is our Laravel source directory
+# let, our server is NGINX and server user is 'www-data' and group is 'www-data'
+
+sudo chown -R www-data:www-data /var/www/laravel-blog
+sudo chmod -R 755 /var/www/laravel-blog
+
+
+# 755 for production & 777 for development 
+
+
+# server block:  
+
+server {
+	listen 80;
+	listen [::]:80;
+
+	root /var/www/laravel/public;
+
+	# Add index.php to the list if you are using PHP
+	index index.php;
+
+	server_name laravel.demo;
+
+	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		try_files $uri $uri/ =404;
+	}
+
+	# pass PHP scripts to FastCGI server
+	#
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+	#
+	#	# With php-fpm (or other unix sockets):
+		fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+	#	# With php-cgi (or other tcp sockets):
+	#	fastcgi_pass 127.0.0.1:9000;
+	}
+
+	# deny access to .htaccess files, if Apache's document root
+	# concurs with nginx's one
+	#
+	location ~ /\.ht {
+		deny all;
+	}
+}
