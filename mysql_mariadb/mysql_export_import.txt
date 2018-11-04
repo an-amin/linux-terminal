@@ -1,0 +1,4 @@
+mysqldump -h {host} -u {user} -p {db_name} > {exported_file_name}
+
+
+mysql -h {host} -u {user} -p {db_name} < {db_file}
