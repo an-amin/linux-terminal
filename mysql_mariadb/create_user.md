@@ -2,6 +2,7 @@
 ## creating a user
 ### CREATE USER '{user}'@'{host}' IDENTIFIED BY '{password}';
 `CREATE USER 'admin'@'%' IDENTIFIED BY '12345678';`
+
 `CREATE USER 'user'@'%' IDENTIFIED BY '12345678';`
 
 
