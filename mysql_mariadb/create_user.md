@@ -11,8 +11,8 @@
 
 
 ## or privilege based on wildcard  matching
-### grant all on `{name}\_%`.* to `{user}`@`{host}`;
-`grant all on `{name}\_%`.* to `{user}`@`{host}`;`
+### grant all on '{name}\_%'.* to '{user}'@'{host}';
+`grant all on '{name}\_%'.* to '{user}`@'{host}';`
 
 
 
