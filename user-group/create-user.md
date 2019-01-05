@@ -1,1 +1,7 @@
+````
+adduser username
+````
+````
+passwd username
+````
 
