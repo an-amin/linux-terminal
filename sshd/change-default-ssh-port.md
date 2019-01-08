@@ -1,3 +1,14 @@
+``
+yum provides /usr/sbin/semange
+``
+Or:
+``
+yum whatprovides /usr/sbin/semanage
+``
+``
+yum -y install policycoreutils-python
+ ``
+
 Open shhd configuration file with super user permission:
 ``
 sudo nano /etc/ssh/sshd_config
