@@ -1,5 +1,5 @@
 Necessary Modules
 
 ````
-php-fpm php-common php-cli php-curl php-zip php-intl php-mbstring php-json php-xml php-gd 
+php-fpm php-common php-cli php-curl php-zip php-intl php-mbstring php-json php-xml php-gd  php-bcmath php-tokenizer php-mysql
 ````
