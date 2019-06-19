@@ -1,3 +1,23 @@
+## Install Python dependency
+
+Not needed in Ubuntu 16.04 
+````
+sudo apt install python-software-properties
+````
+or, 
+
+Not needed in Ubuntu 18.04 
+````
+sudo apt install software-properties-common
+````
+
+
+## Add repo 
+````
+sudo add-apt-repository ppa:ondrej/php
+````
+
+
 ## Necessary PHP Modules
 
 ### to install latest PHP version
