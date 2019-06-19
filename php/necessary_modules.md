@@ -17,6 +17,11 @@ sudo apt install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 ````
 
+# Update apt 
+````
+sudo apt update && apt upgrade -y
+````
+
 
 ## Necessary PHP Modules
 
