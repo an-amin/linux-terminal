@@ -16,6 +16,10 @@
 ```grant all on `user\_%`.* to 'user'@'%';```
 
 
+## GRANT root privilege
+### GRANT ALL PRIVILEGES ON * . * TO '{user}'@'{host}' WITH GRANT OPTIONS;
+`GRANT ALL PRIVILEGES ON * . * TO 'admin'@'%' with grant options;`
+
 
 ## apply changes
 `FLUSH PRIVILEGES;`
