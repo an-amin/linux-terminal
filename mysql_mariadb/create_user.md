@@ -17,8 +17,8 @@
 
 
 ## GRANT root privilege
-### GRANT ALL PRIVILEGES ON * . * TO `{user}`@`{host}` WITH GRANT OPTIONS;
-````GRANT ALL PRIVILEGES ON * . * TO `admin`@`%` with grant options;````
+### GRANT ALL PRIVILEGES ON * . * TO `{user}`@`{host}` WITH GRANT OPTION;
+````GRANT ALL PRIVILEGES ON * . * TO `admin`@`%` with grant option;````
 
 
 ## apply changes
