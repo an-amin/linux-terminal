@@ -1,24 +1,24 @@
 
 ## creating a user
-### CREATE USER '{user}'@'{host}' IDENTIFIED BY '{password}';
-`CREATE USER 'admin'@'%' IDENTIFIED BY '12345678';`
+### CREATE USER `{user}`@`{host}` IDENTIFIED BY '{password}';
+````CREATE USER `admin`@`%` IDENTIFIED BY '12345678';````
 
-`CREATE USER 'user'@'%' IDENTIFIED BY '12345678';`
+````CREATE USER `user`@`%` IDENTIFIED BY '12345678';````
 
 
 ## all privileges
-### GRANT ALL PRIVILEGES ON * . * TO '{user}'@'{host}';
-`GRANT ALL PRIVILEGES ON * . * TO 'admin'@'%';`
+### GRANT ALL PRIVILEGES ON * . * TO `{user}`@`{host}`;
+````GRANT ALL PRIVILEGES ON * . * TO `admin`@`%`;````
 
 
 ## or privilege based on wildcard  matching
-### grant all on '{name}\_%'.* to '{user}'@'{host}';
-```grant all on `user\_%`.* to 'user'@'%';```
+### grant all on '{name}\_%'.* to `{user}`@`{host}`;
+```grant all on `user\_%`.* to `user`@`%`;```
 
 
 ## GRANT root privilege
-### GRANT ALL PRIVILEGES ON * . * TO '{user}'@'{host}' WITH GRANT OPTIONS;
-`GRANT ALL PRIVILEGES ON * . * TO 'admin'@'%' with grant options;`
+### GRANT ALL PRIVILEGES ON * . * TO `{user}`@`{host}` WITH GRANT OPTIONS;
+````GRANT ALL PRIVILEGES ON * . * TO `admin`@`%` with grant options;````
 
 
 ## apply changes
@@ -33,5 +33,5 @@
 ### reference 
 {user} 		= database username
 {password} 	= password 
-{host} 		= databse serve hostname. 'localhost' or '%' (anyhost)
+{host} 		= databse serve hostname. `localhost` or `%` (anyhost)
 {name} 		= database name
