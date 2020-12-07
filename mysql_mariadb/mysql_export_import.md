@@ -2,20 +2,20 @@
 mysqldump -h {host} -u {user} -p -P {port_no} {db_name} > {exported_file_name}
 
 ````
-mysqldump -h localhost -u root -p -P 336 test_db > /path/to/db_file.sql
+mysqldump -h localhost -u root -p -P 3306 test_db > /path/to/db_file.sql
 ````
 
 ### Export schema without data 
 mysqldump -h {host} -u {user} -p -P {port_no} --no-data {db_name} > {exported_file_name}
 
 ````
-mysqldump -h localhost -u root -p -P 336 --no-data test_db > /path/to/db_file.sql
+mysqldump -h localhost -u root -p -P 3306 --no-data test_db > /path/to/db_file.sql
 ````
 
 
 ### File name with timestamp
 ````
-mysqldump -h localhost -u root -p -P 336 test_db > /path/to/"DB_FileName `date +"%F %R:%S"`.sql"
+mysqldump -h localhost -u root -p -P 3306 test_db > /path/to/"DB_FileName `date +"%F %R:%S"`.sql"
 ````
 
 
