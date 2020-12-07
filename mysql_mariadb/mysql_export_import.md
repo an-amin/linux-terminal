@@ -15,7 +15,7 @@ mysqldump -h localhost -u root -p -P 3306 --no-data test_db > /path/to/db_file.s
 
 ### File name with timestamp
 ````
-mysqldump -h localhost -u root -p -P 3306 test_db > /path/to/"DB_FileName `date +"%F %R:%S"`.sql"
+mysqldump -h localhost -u root -p -P 3306 test_db > /path/to/"DB_FileName `date +"%F %T"`.sql"
 ````
 
 
