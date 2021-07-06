@@ -35,3 +35,12 @@
 {password} 	= password 
 {host} 		= databse serve hostname. `localhost` or `%` (anyhost)
 {name} 		= database name
+
+
+### Create backup user agent
+````
+create user `backup_agent`@`localhost` IDENTIFIED BY 'backup_agent_user_password';
+grant all on `backup\_%`.* to `backup_agent`@`localhost`;
+grant SHOW DATABASES, SELECT, LOCK TABLES, RELOAD, SUPER on *.* to `backup_agent`@`localhost`;
+FLUSH PRIVILEGES;
+````
